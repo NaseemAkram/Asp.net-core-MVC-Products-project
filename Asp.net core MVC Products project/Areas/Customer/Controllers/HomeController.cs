@@ -1,9 +1,10 @@
-﻿using Asp.net_core_MVC_Products_project.Models;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
+using MyApp.Models;
 using System.Diagnostics;
 
-namespace Asp.net_core_MVC_Products_project.Controllers
+namespace Asp.net_core_MVC_Products_project.Areas.Customer.Controllers
 {
+    [Area("Customer")]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
